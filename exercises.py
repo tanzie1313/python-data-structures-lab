@@ -87,7 +87,45 @@ def hometown_info():
 print('Exercise 4:', hometown_info())
 
 
+# Exercise 5: Iterating Over Dictionary Items
+#
+# Define an empty list named home_town_items.
+# Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
+
+def list_home_town_items():
+    home_town = {
+        'city': 'Butte',
+        'state': 'Montana',
+        'population': 5701
+    }
+    home_town_items = []
+    for key, value in home_town.items():
+        home_town_items.append(f"{key} = {value}")
+    return home_town_items
 
 
+
+    # your code here
+
+# Call the function and print the result
+print('Exercise 5:', list_home_town_items())
+
+#level up
+
+# Exercise 6: Celebrate Students
+#
+# Using the list of students and a list comprehension, assign to a variable named awesome_students a new list containing strings.
+# For example: ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
+
+def create_awesome_students():
+    students = ['Tanzie', 'Rob', 'Issac', 'Francine']
+    # Use a list comprehension to create the awesome_students list
+    awesome_students = [f"{student} is awesome!" for student in students]
+    # Return the new list
+    return awesome_students  # should return ['Tanzie is awesome!', 'Rob is awesome!', 'Issac is awesome!', 'Francine is awesome!']
+    # your code here
+
+# Call the function and print the result
+print('Exercise 6:', create_awesome_students())
 
 

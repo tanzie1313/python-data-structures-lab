@@ -66,6 +66,28 @@ def slice_foods():
 # Call the function and print the result
 print('Exercise 3:', slice_foods())
 
+# Exercise 4: Dictionaries and String Formatting
+#
+# Create a dictionary named home_town containing the keys of city, state, and population.
+# Using the home_town dictionary, assign to a variable named home_town_message a string with this format: “I was born in <city>, <state> - population of <population>”
+
+def hometown_info():
+    # Create the dictionary with the required keys and values
+    home_town = {
+        'city': 'Butte',
+        'state': 'Montana',
+        'population': 5701
+    }
+    # Create the message using string formatting
+    home_town_message = f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}"
+    # Return the message
+    return home_town_message  # should return "I was born in Butte, Montana - population of 5701"
+
+# Call the function and print the result
+print('Exercise 4:', hometown_info())
+
+
+
 
 
 

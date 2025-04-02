@@ -129,3 +129,19 @@ def create_awesome_students():
 print('Exercise 6:', create_awesome_students())
 
 
+# Exercise 7: Filter Foods
+#
+# Assign to a variable named foods_with_an_a the result of list comprehension that filters the foods tuple to only include food strings that contain the letter 'a'.
+# For example, if foods is a tuple of ('Taco', 'Burrito', 'Sandwich'), foods_with_an_a would be a list equal to ['Taco', 'Sandwich']
+
+def filter_foods_with_a():
+    foods = ('pizza', 'burgers', 'tacos')
+    # Use a list comprehension to filter foods with 'a'
+    foods_with_an_a = [food for food in foods if 'a' in food]
+    # Return the filtered list
+    return foods_with_an_a  # should return ['pizza', 'tacos']
+
+    # your code here
+
+# Call the function and print the result
+print('Exercise 7:', filter_foods_with_a())
